@@ -40,7 +40,6 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   gap: 50px;
-
 }
 .start-your-journey-slogan {
   padding-top: 50px;
@@ -72,7 +71,7 @@ body {
   height: 414px;
 }
 /* Styling the brands section  */
-.brands{
+.brands {
   padding-top: 100px;
   padding-right: 130px;
   padding-left: 130px;
@@ -81,11 +80,53 @@ body {
   align-items: center;
 }
 
+/* Styling popular section  */
+.container-popular-collection{
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+.popular-collection {
+  background-color: rgb(238, 238, 228);
+  margin-left: 50px;
+  margin-bottom: 50px;
+  padding:20px 20px;
+  border-radius: 10px;
+}
+.card-star-price{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.popular-title{
+  text-align: center;
+  margin-top:50px;
+  font-size:40px;
+}
+
 
 /* -----------------------------------------------------------------  */
 /* Media queries  */
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  .card-star-price{
+    margin-left: 55px;
+  }
+  .container-popular-collection{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .popular-collection {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 35px;
+  }
   .header-nav-options {
     display: none;
   }
@@ -98,23 +139,22 @@ body {
   .header-nav-bar-title {
     padding-left: 20px;
   }
-  .container{
+  .container {
     flex-direction: column-reverse;
     padding-left: 0px;
     padding-right: 0px;
     gap: 0px;
   }
-  .start-your-journey-slogan{
+  .start-your-journey-slogan {
     text-align: center;
-    
   }
-  .start-your-journey-slogan h1{
+  .start-your-journey-slogan h1 {
     font-size: 30px;
   }
-  .start-your-journey-slogan p{
+  .start-your-journey-slogan p {
     font-size: 20px;
   }
-  .brands{
+  .brands {
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
@@ -123,9 +163,6 @@ body {
     justify-content: center;
     gap: 30px;
   }
-  
-  
-
 }
 
 /* Medium devices (tablets, 768px and up) */
