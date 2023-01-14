@@ -71,6 +71,16 @@ body {
   width: 440px;
   height: 414px;
 }
+/* Styling the brands section  */
+.brands{
+  padding-top: 100px;
+  padding-right: 130px;
+  padding-left: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* -----------------------------------------------------------------  */
 /* Media queries  */
@@ -90,7 +100,30 @@ body {
   }
   .container{
     flex-direction: column-reverse;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 0px;
   }
+  .start-your-journey-slogan{
+    text-align: center;
+    
+  }
+  .start-your-journey-slogan h1{
+    font-size: 30px;
+  }
+  .start-your-journey-slogan p{
+    font-size: 20px;
+  }
+  .brands{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
   
 
 }
