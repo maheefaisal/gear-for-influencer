@@ -5,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 /* styling header  */
 .header-bar {
@@ -135,10 +136,45 @@ body {
   color: #6C6C6C;
 }
 
+/* Styling footer  */
+footer{
+  background-color:#000000;
+  text-align: center;
+  padding: 50px 0px;
+}
+.footer-title{
+  color: white;
+}
+.footer-subtitle{
+  color:white;
+}
+
+.footer-subtitle2{
+  color:white;
+}
+footer i{
+  background-color: rgba(242, 232, 232, 0.2);
+  border-radius: 50%;
+  padding: 10px 10px;
+  margin-right: 10px;
+}
+
 /* -----------------------------------------------------------------  */
 /* Media queries  */
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  .featured-container{
+    flex-direction: column-reverse;
+    margin:  0px 0px;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .fetured-info{
+    margin-bottom: 50px;
+  }
+  .featured-product-image{
+    margin-left: 10px;
+  }
   .card-star-price {
     margin-left: 55px;
   }
